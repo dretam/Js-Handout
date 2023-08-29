@@ -1,0 +1,30 @@
+<%- include('./includes/main-template-upper.ejs') %>
+
+<script src="/js/cookies.js" defer></script>
+<script src="/js/web-storage.js" defer></script>
+<script src="/js/indexed-db.js" defer></script>
+
+<button type="button" class="build-indexdb">Build Databases</button>
+
+<fieldset>
+    <legend>Employees</legend>
+    <button type="button" class="add-employees">Add Employees</button>
+    <button type="button" class="get-employees">Get Employees</button>
+    <button type="button" class="delete-employees">Delete Employees</button>
+</fieldset>
+
+<fieldset>
+    <legend>Suppliers</legend>
+    <button type="button" class="add-suppliers">Add Suppliers</button>
+    <button type="button" class="get-suppliers">Get Suppliers</button>
+    <button type="button" class="delete-suppliers">Delete Suppliers</button>
+</fieldset>
+
+<fieldset>
+    <legend>Customers</legend>
+    <button type="button" class="add-customers">Add Customers</button>
+    <button type="button" class="get-customers">Get Customers</button>
+    <button type="button" class="delete-customers">Delete Customers</button>
+</fieldset>
+
+<%- include('./includes/main-template-bottom.ejs') %>

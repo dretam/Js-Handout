@@ -1,0 +1,1 @@
+﻿This is just a sample text in a plain text file.

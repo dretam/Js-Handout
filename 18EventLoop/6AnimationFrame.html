@@ -1,0 +1,50 @@
+
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Ini adalah description mengenai website ini."> 
+        <meta name="keywords" content="Latihan,Bootcamp,Indocyber">
+        <meta name="author" content="Boby Widjaja"> 
+        <title>Event Loop - Animation Frame</title>
+        <link rel="stylesheet" type="text/css" href="animationStyle.css">
+        <script src="6AnimationFrame.js" defer></script>
+    </head>
+    <body>
+        <div class="raf-vs-timeOut">
+            <h3>Frame by Frame setTimeout() vs requestAnimationFrame()</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Set Time Out: </td>
+                        <td><progress id="timeOut-progress" value="0" max="100"></progress></td>
+                    </tr>         
+                    <tr>
+                        <td>Set Time Out / 60: </td>
+                        <td><progress id="division-progress" value="0" max="100"></progress></td>
+                    </tr>                                 
+                    <tr>
+                        <td>Request Animation Frame: </td>
+                        <td><progress id="raf-progress" value="0" max="100"></progress></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button">Start Animate</button>
+        </div>
+        <div class="multiple-changes">
+            <h3>Rendering Detour</h3>
+            <div class="container">
+                <div id="changing-box" class="phase-1"></div>
+            </div>
+            <div class="button-group">
+                <button class="reset" type="button">Reset</button>
+                <button class="normal" type="button">Animate</button>
+                <button class="single" type="button">Single Request</button>
+                <button class="double" type="button">Double Request</button>
+            </div>
+        </div>
+
+
+    </body>
+</html>

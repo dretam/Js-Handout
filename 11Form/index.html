@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Javascript Training Program</title>
+<style>
+  form{
+    border:solid 1px black;
+    padding:5px;
+    margin-bottom:10px;
+  }
+  input, label, textarea{
+    display: block;
+  }
+</style>
+<script src="jquery-3.5.1.js"></script>
+<script src="formAndRegex.js" defer></script>
+</head>
+<body>
+  <form name="search">
+    <input type="text" name="searchBox">
+    <button type="submit">Search</button>
+  </form>
+
+  <form id="hero">
+    <label for="heroName" class="break">Name:</label>
+    <input type="text" name="heroName" autofocus placeholder="Your Super Hero Name" maxlength=50/>
+    <label for="realName" class="break">Real Name:</label>
+    <input type="password" name="realName">
+    <p>What type of hero are you?</p>
+    <label>Hero:</label>
+    <input type="radio" name="type" value="Hero">
+    <label>Villain:</label>
+    <input type="radio" name="type" value="Villain">
+    <label>Anti-Hero:</label>
+    <input type="radio" name="type" value="Antihero">
+    <p>Super Powers:</p>
+    <label for="flight">Flight:</label>
+    <input type="checkbox" value="Flight" name="powers">
+    <label for="strength">Super Strength:</label>
+    <input type="checkbox" value="Super Strength" name="powers">
+    <label for="speed">Super Speed:</label>
+    <input type="checkbox" value="Super Speed" name="powers">
+    <label for="energy">Energy Blasts:</label>
+    <input type="checkbox" value="Energy Blasts" name="powers">
+    <label for="telekinesis">Telekinesis:</label>
+    <input type="checkbox" value="Telekinesis" name="powers">
+    <label for="City" class="break">Base of Operations:</label>
+    <select name="city">
+      <option value="" selected>Choose a City</option>
+      <option value="Metropolis">Metropolis</option>
+      <option value="Gotham City">Gotham City</option>
+      <option value="Keystone City">Keystone City</option>
+      <option value="Coast City">Coast City</option>
+      <option value="Star City">Star City</option>
+    </select>
+    <label for="origin" class="break">Origin Story:</label>
+    <textarea name="origin" rows="20" cols="60"></textarea>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <form name="validationMachine">
+    <input type="text" name="inputOne" placeholder="Input One"/>
+    <input type="text" name="inputTwo" placeholder="Input Two"/>
+    <input type="text" name="inputThree" placeholder="Input Three"/>
+    <input type="text" name="inputFour" placeholder="Input Four"/>
+    <input type="text" name="inputFive" placeholder="Input Five"/>
+    <input type="text" name="inputSix" placeholder="Input Six"/>
+    <input type="text" name="inputSeven" placeholder="Input Seven"/>
+    <input type="text" name="inputEight" placeholder="Input Eight"/>
+    <input type="text" name="inputNine" placeholder="Input Nine"/>
+    <input type="text" name="inputTen" placeholder="Input Ten"/>    
+    <input type="text" name="inputEleven" placeholder="Input Eleven"/>
+    <input type="text" name="inputTwelve" placeholder="Input Twelve"/>
+    <input type="text" name="inputThirteen" placeholder="Input Thirteen"/>
+    <input type="text" name="inputFourteen" placeholder="Input Fourteen"/>
+    <input type="text" name="inputFifteen" placeholder="Input Fifteen"/>
+    <input type="text" name="inputSixteen" placeholder="Input Sixteen"/>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+</body>
+</html>
